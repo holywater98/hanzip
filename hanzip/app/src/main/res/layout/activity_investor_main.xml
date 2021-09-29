@@ -29,7 +29,7 @@
 
         <Button
             android:id="@+id/btn_fragmentA"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="clickHandler"
@@ -38,7 +38,17 @@
 
         <Button
             android:id="@+id/btn_fragmentB"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="clickHandler"
+            android:text="받은 픽"
+            android:textColor="#020202"
+            app:backgroundTint="#E0E0E0" />
+
+        <Button
+            android:id="@+id/btn_fragmentC"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="clickHandler"
@@ -47,18 +57,18 @@
             app:backgroundTint="#E0E0E0" />
 
         <Button
-            android:id="@+id/btn_fragmentC"
-            android:layout_width="wrap_content"
+            android:id="@+id/btn_fragmentD"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="clickHandler"
             android:text="채팅"
             android:textColor="#FFFFFF"
-            app:backgroundTint="#5E5E5E" />
-
+            app:backgroundTint="#5E5E5E"
+             />
         <Button
-            android:id="@+id/btn_fragmentD"
-            android:layout_width="wrap_content"
+            android:id="@+id/btn_fragmentE"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="clickHandler"

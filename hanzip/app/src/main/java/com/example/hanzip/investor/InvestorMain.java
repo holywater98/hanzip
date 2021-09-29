@@ -50,6 +50,9 @@ public class InvestorMain extends AppCompatActivity {
             case R.id.btn_fragmentD:
                 transaction.replace(R.id.frameLayout, mypage).commitAllowingStateLoss();
                 break;
+            case R.id.btn_fragmentE:
+                transaction.replace(R.id.frameLayout, mypage).commitAllowingStateLoss();
+                break;
         }
     }
 
