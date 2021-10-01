@@ -6,18 +6,81 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+        <!--    <TextView-->
+        <!--        android:id="@+id/inform"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_marginTop="44dp"-->
+        <!--        android:layout_marginEnd="152dp"-->
+        <!--        android:text="부동산 투자 플랫폼 "-->
+        <!--        android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        app:layout_constraintTop_toTopOf="@id/hello" />-->
+
+        <!--    <TextView-->
+        <!--        android:id="@+id/hanzip"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_marginTop="44dp"-->
+        <!--        android:layout_marginEnd="224dp"-->
+        <!--        android:text="한집입니다."-->
+        <!--        android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        app:layout_constraintTop_toTopOf="@id/inform" />-->
+
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/hello"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="152dp"
+        android:text="안녕하세요!\n부동산 투자 플랫폼\n한집입니다. "
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="152dp" />
+
+    <TextView
+        android:id="@+id/help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="224dp"
+        android:text="어떤 분이신가요?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/hello"
+        android:layout_marginRight="224dp" />
 
     <Button
         android:id="@+id/btn_investor"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="104dp"
+
+        android:text="저는 예비 투자자입니다."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/help"
+        android:layout_marginLeft="80dp" />
+
+    <Button
+        android:id="@+id/btn_mentor"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="44dp"
+
+        android:text="저는 투자멘토입니다. "
+        app:layout_constraintEnd_toEndOf="@+id/btn_investor"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_investor"
+        app:layout_constraintTop_toBottomOf="@+id/btn_investor"
+        android:layout_marginLeft="80dp" />
+
+    <Button
+        android:id="@+id/btn_mapinvestor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"

@@ -10,11 +10,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Hanzip">
+        <activity
+            android:name=".mentor2_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".mentor1_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".investor_Activity"
+            android:exported="true" />
+
         <meta-data
             android:name="com.naver.maps.map.CLIENT_ID"
             android:value="8o4nqlyy74" />
-        <activity android:name=".investor.InvestorMain"
-            android:theme="@style/FullScreenTheme"></activity>
+
+        <activity
+            android:name=".investor.InvestorMain"
+            android:theme="@style/FullScreenTheme" />
         <activity android:name=".investor.MentorSelection" />
         <activity android:name=".investor.Payment" />
         <activity

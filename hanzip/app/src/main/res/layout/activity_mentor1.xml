@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mentor1">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="투자멘토 소개 "
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/mtfirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="152dp"
+        android:text="투자멘토로써 \n나를 소개해주세요 :)"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="74dp"
+        android:layout_marginRight="152dp" />
+
+    <TextView
+        android:id="@+id/mtprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="40dp"
+        android:text="프로필"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mtfirst"
+        android:layout_marginLeft="74dp" />
+
+    <ImageView
+        android:id="@+id/mtimage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mtprofile"
+        android:layout_marginLeft="60dp" />
+
+    <TextView
+        android:id="@+id/mtnickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="12dp"
+        android:text="닉네임을 입력하세요"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mtprofile"
+        android:layout_marginLeft="164dp" />
+
+    <EditText
+        android:id="@+id/ed_tx_mtnick"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="12dp"
+        android:hint="내용을 입력하세요"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mtnickname"
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="164dp" />
+
+    <TextView
+        android:id="@+id/mtPN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="30dp"
+        android:text="연락처를 입력하세요"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_tx_mtnick"
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="74dp" />
+
+    <EditText
+        android:id="@+id/ed_tx_mtpn"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="12dp"
+        android:hint="내용을 입력하세요"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mtPN"
+        android:layout_marginLeft="74dp" />
+
+    <TextView
+        android:id="@+id/mtinform"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="30dp"
+        android:text="멘토님을 소개해주세요"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ed_tx_mtpn"
+        android:layout_marginLeft="74dp" />
+
+    <EditText
+        android:id="@+id/ed_tx_mtinform"
+        android:layout_width="250dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="12dp"
+        android:hint="멘토님의 어떤투자를 하는지\n어떤 채널을 운영하는지\n투자자에게 알려주세요"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mtinform"
+        android:layout_marginLeft="74dp" />
+
+    <Button
+        android:id="@+id/btn_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="284dp"
+        android:layout_marginTop="636dp"
+        android:text="계속"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
